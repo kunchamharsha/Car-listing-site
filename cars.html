@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html ng-app="spegray" lang="en">
+
+<head>
+	<title>Spegray Cars</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script>document.write('<base href="' + document.location + '" />');</script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+	<script src="demo.js"></script>
+</head>
+
+<body ng-controller="search" ng-init="check()">
+	<div>
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Spegray</a>
+			</div>
+		</nav>
+	</div>
+	<div class="container-fluid">
+		<div class="container" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+			<div class="row">
+				<div class="col-sm-6 col-xs-12">
+					<img class="img-responsive" ng-src={{result[0].image[0]}}>
+				</div>
+				<div class="col-sm-6 col-xs-12" style="padding-top:5%;padding-left:5%;">
+					<h1>{{result[0].name[0]}}</h1>
+					<h2>Starts at {{result[0].price[0]}} Lakhs</h2>
+				</div>
+			</div>
+		</div>
+		<div class="container" style="margin-top:2%;     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+			<h1>Everything you need to know</h1>
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="panel panel-default">
+						<div class="panel-heading">Fuel Economy</div>
+						<div class="panel-body">{{result[0].petrolmile[0]}} kmpl</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="panel panel-default">
+						<div class="panel-heading">No. of gears</div>
+						<div class="panel-body">{{result[0].No_Of_Gears[0]}}</div>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="panel panel-default">
+						<div class="panel-heading">Fuel Type</div>
+						<div class="panel-body">{{result[0].fueltype[0]}}</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="panel panel-default">
+						<div class="panel-heading">Engine Capacity</div>
+						<div class="panel-body">{{result[0].Engine[0]}} cc</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="panel panel-default">
+						<div class="panel-heading">Tyre Size</div>
+						<div class="panel-body">{{result[0].Tyre_Size[0]}} kmpl</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="panel panel-default">
+						<div class="panel-heading">Ground Clearance</div>
+						<div class="panel-body">{{result[0].Ground_Clearance[0]}} mm</div>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="panel panel-default">
+						<div class="panel-heading">Bootspace</div>
+						<div class="panel-body">{{result[0].Boot_Space[0]}} litres</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="panel panel-default">
+						<div class="panel-heading">Top Speed</div>
+						<div class="panel-body">{{result[0].Top_Speed__Km_h_[0]}} cc</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="container" ng-if="datapresent" ng-init="searchmake()" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+			<h1>check out few other cool cars too</h1>
+			<data-owl-carousel class="owl-carousel" data-options="{navigation: true, pagination: false, rewindNav : false}">
+				<div owl-carousel-item="" ng-repeat="item in ::carmake" class="item">
+					<div class="panel panel-default text-center" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+						<img ng-src={{::item.image[0]}} class="img-responsive" >
+						<p>Name:{{::item.name[0]}}</p>
+						<button class="btn btn-primary"><a style="color:white;" ng-click="loadroute()" href="/cars.html?cars={{::item.id}}">See More</a></button>
+					</div>
+				</div>
+			</data-owl-carousel>
+		</div>
+	</div>
+
+	</div>
+</body>
+
+</html>
