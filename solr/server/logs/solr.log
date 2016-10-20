@@ -195,3 +195,9 @@
 2016-10-20 05:25:22.376 INFO  (qtp97730845-12) [   x:cars] o.a.s.c.S.Request [cars]  webapp=/solr path=/select params={q=bmw&indent=on&wt=json} hits=9 status=0 QTime=0
 2016-10-20 05:47:59.731 INFO  (qtp97730845-21) [   x:cars] o.a.s.c.S.Request [cars]  webapp=/solr path=/select params={q=undefined&indent=on&wt=json} hits=0 status=0 QTime=1
 2016-10-20 05:48:24.009 INFO  (qtp97730845-14) [   x:cars] o.a.s.c.S.Request [cars]  webapp=/solr path=/select params={q=bmw&indent=on&wt=json} hits=9 status=0 QTime=0
+2016-10-20 06:32:29.170 INFO  (qtp97730845-18) [   x:cars] o.a.s.c.S.Request [cars]  webapp=/solr path=/select params={q=undefined&indent=on&wt=json} hits=0 status=0 QTime=1
+2016-10-20 08:54:40.690 INFO  (qtp97730845-19) [   x:cars] o.a.s.c.S.Request [cars]  webapp=/solr path=/select params={q=undefined&indent=on&wt=json} hits=0 status=0 QTime=1
+2016-10-20 08:55:31.698 INFO  (qtp97730845-14) [   x:cars] o.a.s.c.S.Request [cars]  webapp=/solr path=/select params={q=undefined&indent=on&wt=json} hits=0 status=0 QTime=0
+2016-10-20 08:55:37.574 INFO  (qtp97730845-17) [   x:cars] o.a.s.c.S.Request [cars]  webapp=/solr path=/select params={q=undefined&indent=on&wt=json} hits=0 status=0 QTime=0
+2016-10-20 08:55:43.300 INFO  (qtp97730845-20) [   x:cars] o.a.s.c.S.Request [cars]  webapp=/solr path=/select params={q=undefined&indent=on&wt=json} hits=0 status=0 QTime=1
+2016-10-20 08:55:54.459 INFO  (qtp97730845-18) [   x:cars] o.a.s.c.S.Request [cars]  webapp=/solr path=/select params={q=bmw&indent=on&wt=json} hits=9 status=0 QTime=0
