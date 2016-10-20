@@ -119,28 +119,28 @@
 						<div class="col-sm-3 card col-xs-12">
 							<div class="thumbnail">
 								<center>
-									<p><a href="/search.html?cars=toyota">Toyota</a></p>
+									<p><a ng-click="loadroute()" href="/search.html?cars=toyota">Toyota</a></p>
 								</center>
 							</div>
 						</div>
 						<div class="col-sm-3 card  col-xs-12">
 							<div class="thumbnail">
 								<center>
-									<p><a href="/search.html?cars=suzuki">Maruthi Suzuki</a></p>
+									<p><a ng-click="loadroute()" href="/search.html?cars=suzuki">Maruthi Suzuki</a></p>
 								</center>
 							</div>
 						</div>
 						<div class="col-sm-3 card  col-xs-12">
 							<div class="thumbnail">
 								<center>
-									<p><a href="/search.html?cars=fiat">Fiat</a></p>
+									<p><a ng-click="loadroute()" href="/search.html?cars=fiat">Fiat</a></p>
 								</center>
 							</div>
 						</div>
 						<div class="col-sm-3 card  col-xs-12">
 							<div class="thumbnail">
 								<center>
-									<p><a href="/search.html?cars=tata">Tata</a></p>
+									<p><a ng-click="loadroute()" href="/search.html?cars=tata">Tata</a></p>
 								</center>
 							</div>
 						</div>
@@ -151,7 +151,7 @@
 							<div class="col-sm-3 card" ng-repeat="x in carmakers">
 								<div class="thumbnail">
 									<center>
-										<p><a href="/search.html?cars={{x}}">{{x}}</a></p>
+										<p><a ng-click="loadroute()" href="/search.html?cars={{x}}">{{x}}</a></p>
 									</center>
 								</div>
 							</div>
