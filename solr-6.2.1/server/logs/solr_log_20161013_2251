@@ -1,0 +1,161 @@
+2016-10-13 17:19:33.552 INFO  (main) [   ] o.e.j.u.log Logging initialized @283ms
+2016-10-13 17:19:33.712 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.8.v20160314
+2016-10-13 17:19:33.726 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/ram/solr-6.2.1/server/contexts/] at interval 0
+2016-10-13 17:19:33.954 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2016-10-13 17:19:33.963 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@527740a2{/solr,file:///home/ram/solr-6.2.1/server/solr-webapp/webapp/,STARTING}{/home/ram/solr-6.2.1/server/solr-webapp/webapp} has uncovered http methods for path: /
+2016-10-13 17:19:33.972 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=488044861@1d16f93d
+2016-10-13 17:19:33.983 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-10-13 17:19:33.983 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/ram/solr-6.2.1/server/solr
+2016-10-13 17:19:33.984 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/ram/solr-6.2.1/server/solr'
+2016-10-13 17:19:33.984 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-10-13 17:19:33.984 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/ram/solr-6.2.1/server/solr
+2016-10-13 17:19:33.988 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/ram/solr-6.2.1/server/solr/solr.xml
+2016-10-13 17:19:34.043 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: /home/ram/solr-6.2.1/server/solr
+2016-10-13 17:19:34.066 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 360067785
+2016-10-13 17:19:34.066 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/home/ram/solr-6.2.1/server/solr]
+2016-10-13 17:19:34.067 WARN  (main) [   ] o.a.s.c.CoreContainer Couldn't add files from /home/ram/solr-6.2.1/server/solr/lib to classpath: /home/ram/solr-6.2.1/server/solr/lib
+2016-10-13 17:19:34.074 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,connectionsEvictorSleepDelay : 5000,maxConnectionIdleTime : 40000,
+2016-10-13 17:19:34.257 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-10-13 17:19:34.259 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2016-10-13 17:19:34.259 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2016-10-13 17:19:34.261 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2016-10-13 17:19:34.261 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2016-10-13 17:19:34.298 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath /home/ram/solr-6.2.1/server/solr
+2016-10-13 17:19:34.308 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=cars, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data/}
+2016-10-13 17:19:34.308 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core cars in /home/ram/solr-6.2.1/server/solr/cars
+2016-10-13 17:19:34.308 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions
+2016-10-13 17:19:34.316 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/ram/solr-6.2.1/server/solr/cars'
+2016-10-13 17:19:34.317 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-10-13 17:19:34.317 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/ram/solr-6.2.1/server/solr
+2016-10-13 17:19:34.317 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/home/ram/solr-6.2.1/server
+2016-10-13 17:19:34.317 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2016-10-13 17:19:34.330 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@527740a2{/solr,file:///home/ram/solr-6.2.1/server/solr-webapp/webapp/,AVAILABLE}{/home/ram/solr-6.2.1/server/solr-webapp/webapp}
+2016-10-13 17:19:34.355 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@3c9754d8{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2016-10-13 17:19:34.355 INFO  (main) [   ] o.e.j.s.Server Started @1090ms
+2016-10-13 17:19:34.384 ERROR (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Exception during parsing file: solrconfig.xml:org.xml.sax.SAXParseException; systemId: solrres:/solrconfig.xml; lineNumber: 1430; columnNumber: 3; The element type "requestHandler" must be terminated by the matching end-tag "</requestHandler>".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1743)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2964)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:504)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.solr.core.Config.<init>(Config.java:143)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:198)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:175)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:836)
+	at org.apache.solr.core.CoreContainer.lambda$load$0(CoreContainer.java:494)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-10-13 17:19:34.385 ERROR (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Error creating core [cars]: Could not load conf for core cars: Error loading solr config from /home/ram/solr-6.2.1/server/solr/cars/conf/solrconfig.xml
+org.apache.solr.common.SolrException: Could not load conf for core cars: Error loading solr config from /home/ram/solr-6.2.1/server/solr/cars/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:836)
+	at org.apache.solr.core.CoreContainer.lambda$load$0(CoreContainer.java:494)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/ram/solr-6.2.1/server/solr/cars/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:183)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: org.xml.sax.SAXParseException; systemId: solrres:/solrconfig.xml; lineNumber: 1430; columnNumber: 3; The element type "requestHandler" must be terminated by the matching end-tag "</requestHandler>".
+	at org.apache.solr.core.Config.<init>(Config.java:154)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:198)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:175)
+	... 9 more
+Caused by: org.xml.sax.SAXParseException; systemId: solrres:/solrconfig.xml; lineNumber: 1430; columnNumber: 3; The element type "requestHandler" must be terminated by the matching end-tag "</requestHandler>".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1743)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2964)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:504)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.solr.core.Config.<init>(Config.java:143)
+	... 12 more
+2016-10-13 17:19:34.387 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be created
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [cars]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.solr.core.CoreContainer.lambda$load$1(CoreContainer.java:522)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [cars]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:851)
+	at org.apache.solr.core.CoreContainer.lambda$load$0(CoreContainer.java:494)
+	... 5 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core cars: Error loading solr config from /home/ram/solr-6.2.1/server/solr/cars/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:85)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:836)
+	... 6 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /home/ram/solr-6.2.1/server/solr/cars/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:183)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:77)
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: org.xml.sax.SAXParseException; systemId: solrres:/solrconfig.xml; lineNumber: 1430; columnNumber: 3; The element type "requestHandler" must be terminated by the matching end-tag "</requestHandler>".
+	at org.apache.solr.core.Config.<init>(Config.java:154)
+	at org.apache.solr.core.Config.<init>(Config.java:90)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:198)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:175)
+	... 9 more
+Caused by: org.xml.sax.SAXParseException; systemId: solrres:/solrconfig.xml; lineNumber: 1430; columnNumber: 3; The element type "requestHandler" must be terminated by the matching end-tag "</requestHandler>".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1743)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2964)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:504)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.solr.core.Config.<init>(Config.java:143)
+	... 12 more
+2016-10-13 17:19:45.300 INFO  (qtp97730845-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1476379185067} status=0 QTime=45
+2016-10-13 17:19:45.330 INFO  (qtp97730845-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1476379185069} status=0 QTime=70
+2016-10-13 17:19:53.101 INFO  (qtp97730845-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1476379192956} status=0 QTime=0
+2016-10-13 17:19:53.111 INFO  (qtp97730845-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1476379192957} status=0 QTime=8
+2016-10-13 17:20:58.260 INFO  (qtp97730845-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1476379258079} status=0 QTime=0
+2016-10-13 17:20:58.269 INFO  (qtp97730845-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1476379258081} status=0 QTime=6
+2016-10-13 17:21:02.064 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@3c9754d8{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2016-10-13 17:21:02.065 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=360067785
+2016-10-13 17:21:02.069 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@527740a2{/solr,null,UNAVAILABLE}{/home/ram/solr-6.2.1/server/solr-webapp/webapp}
+2016-10-13 17:21:02.070 WARN  (ShutdownMonitor) [   ] o.e.j.s.ServletContextHandler ServletContextHandler.setHandler should not be called directly. Use insertHandler or setSessionHandler etc.
