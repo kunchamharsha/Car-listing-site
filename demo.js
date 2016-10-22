@@ -94,7 +94,7 @@ app.controller("home",function($scope,$window){
 });
 app.controller("search", function ($http, $scope, $timeout, $window, $location) {
 	$scope.search = function () {
-		var url = "http://localhost:8983/solr/cars/select?indent=on&q=" + $scope.query + "&wt=json"
+		var url = "/searchdata/cars/select?indent=on&q=" + $scope.query + "&wt=json"
 		$http.get(url, { cache: true }).then(function (response) {
 			$scope.result = response.data.response.docs
 			$location.search('cars', $scope.query)
@@ -107,7 +107,7 @@ app.controller("search", function ($http, $scope, $timeout, $window, $location) 
 	}
 	$scope.searchmake = function () {
 		$scope.newquery = $scope.result[0].company[0];
-		var url = "http://localhost:8983/solr/cars/select?indent=on&q=" + $scope.newquery + "&wt=json"
+		var url = "searchdata/cars/select?indent=on&q=" + $scope.newquery + "&wt=json"
 		$timeout(function () {
 			$http.get(url, { cache: true })
 				.then(function (response) {
