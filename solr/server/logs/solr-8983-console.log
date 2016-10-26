@@ -153,3 +153,23 @@
 7424 INFO  (coreLoadExecutor-6-thread-1) [   x:cars] o.a.s.u.VersionInfo Found MAX value 1548236994679668736 from Terms for _version_ in index
 7431 INFO  (coreLoadExecutor-6-thread-1) [   x:cars] o.a.s.u.UpdateLog Took 22.0ms to seed version buckets with highest version 1548236994679668736
 7433 INFO  (coreLoadExecutor-6-thread-1) [   x:cars] o.a.s.c.CoreContainer registering core: cars
+88683720 INFO  (Thread-0) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@e971bdd{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+88683720 INFO  (Thread-0) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=360067785
+88683727 INFO  (coreCloseExecutor-12-thread-1) [   x:cars] o.a.s.c.SolrCore [cars]  CLOSING SolrCore org.apache.solr.core.SolrCore@3d0e689f
+88683728 INFO  (coreCloseExecutor-12-thread-1) [   x:cars] o.a.s.u.DirectUpdateHandler2 closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=28364,transaction_logs_total_number=1}
+88683729 INFO  (coreCloseExecutor-12-thread-1) [   x:cars] o.a.s.u.SolrCoreState Closing SolrCoreState
+88683729 INFO  (coreCloseExecutor-12-thread-1) [   x:cars] o.a.s.u.DefaultSolrCoreState SolrCoreState ref count has reached 0 - closing IndexWriter
+88683729 INFO  (coreCloseExecutor-12-thread-1) [   x:cars] o.a.s.u.DefaultSolrCoreState closing IndexWriter with IndexWriterCloser
+88683745 INFO  (coreCloseExecutor-12-thread-1) [   x:cars] o.a.s.c.SolrCore [cars] Closing main searcher on request.
+88683748 INFO  (coreCloseExecutor-12-thread-1) [   x:cars] o.a.s.c.CachingDirectoryFactory Closing NRTCachingDirectoryFactory - 3 directories currently being tracked
+88683749 INFO  (coreCloseExecutor-12-thread-1) [   x:cars] o.a.s.c.CachingDirectoryFactory looking to close /home/ram/startup/solr/server/solr/cars/data [CachedDir<<refCount=0;path=/home/ram/startup/solr/server/solr/cars/data;done=false>>]
+88683749 INFO  (coreCloseExecutor-12-thread-1) [   x:cars] o.a.s.c.CachingDirectoryFactory Closing directory, CoreContainer#isShutdown=true
+88683749 INFO  (coreCloseExecutor-12-thread-1) [   x:cars] o.a.s.c.CachingDirectoryFactory Closing directory: /home/ram/startup/solr/server/solr/cars/data
+88683749 INFO  (coreCloseExecutor-12-thread-1) [   x:cars] o.a.s.c.CachingDirectoryFactory looking to close /home/ram/startup/solr/server/solr/cars/data/snapshot_metadata [CachedDir<<refCount=0;path=/home/ram/startup/solr/server/solr/cars/data/snapshot_metadata;done=false>>]
+88683749 INFO  (coreCloseExecutor-12-thread-1) [   x:cars] o.a.s.c.CachingDirectoryFactory Closing directory, CoreContainer#isShutdown=true
+88683749 INFO  (coreCloseExecutor-12-thread-1) [   x:cars] o.a.s.c.CachingDirectoryFactory Closing directory: /home/ram/startup/solr/server/solr/cars/data/snapshot_metadata
+88683750 INFO  (coreCloseExecutor-12-thread-1) [   x:cars] o.a.s.c.CachingDirectoryFactory looking to close /home/ram/startup/solr/server/solr/cars/data/index [CachedDir<<refCount=0;path=/home/ram/startup/solr/server/solr/cars/data/index;done=false>>]
+88683750 INFO  (coreCloseExecutor-12-thread-1) [   x:cars] o.a.s.c.CachingDirectoryFactory Closing directory, CoreContainer#isShutdown=true
+88683750 INFO  (coreCloseExecutor-12-thread-1) [   x:cars] o.a.s.c.CachingDirectoryFactory Closing directory: /home/ram/startup/solr/server/solr/cars/data/index
+88683753 INFO  (Thread-0) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@527740a2{/solr,null,UNAVAILABLE}{/home/ram/startup/solr/server/solr-webapp/webapp}
+88683754 WARN  (Thread-0) [   ] o.e.j.s.ServletContextHandler ServletContextHandler.setHandler should not be called directly. Use insertHandler or setSessionHandler etc.
